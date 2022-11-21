@@ -23,9 +23,11 @@ def run_yamus(core:VACore, phrase:str):
     if core != None:
         core.play_voice_assistant_speech("Запускаю музыку")
 
-    # open web page
-    import webbrowser
-    webbrowser.open("https://music.yandex.ru/home", 1)
+    # # open web page
+    # import webbrowser
+    # webbrowser.open("https://music.yandex.ru/home", 1)
+    from os import system
+    os.system('spotify')
     time.sleep(3)
 
     # focus on browser
